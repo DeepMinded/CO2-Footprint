@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Create a head with title, responsiv meta data and a link to the css.file-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CO2 Emissions</title>
+    <link rel="stylesheet" href="css/styleV2.css">
+</head>
+<!-------------------------------------------------HEADER----------------------------------------------------------------->
+<!--Create a header ( fixed responsiv sidebar ) with logo and tile-->
+<nav>
+    <div class="sidebar">
+        <img src="img/logo.png" alt="logo" style="width:200px;height:auto;">
+        <h1>CO2 Emissions</h1>
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+</nav>
+<!-------------------------------------------------BODY----------------------------------------------------------------->
+<!--Create a body with descriptions and a table-->
+<body>
+    <div class="content">
+        <div id="description">
+            <h2>CO2 Emissions</h2>
+            <p>CO2 emissions are the main cause of global warming.
+            The following table shows the yearly CO2 emissions (in million tons) of the 10 biggest tech companies in the world.</p>
+        </div>
+        <div id="sortDescription">
+            <p><strong>Click the headers to sort the table.</strong></p>
+            <p>The first time you click, the sorting direction is ascending (A to Z).</p>
+            <p>Click again, and the sorting direction will be descending (Z to A):</p>
+        </div>
+        <input id="myInput" type="text" placeholder="Search for a country or company ..."/>
+        <table id="myTable">
+            <thead>
+                <tr class="tHeader">
+                    <th onclick="sortTable(0)">Company</th>
+                    <th onclick="sortTable(1)">Country</th>
+                    <th onclick="sortTable(2)">Yearly Emissions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apple</td>
+                    <td>USA</td>
+                    <td>34.2</td>
+                </tr>
+                <tr>
+                    <td>Microsoft</td>
+                    <td>USA</td>
+                    <td>15.3</td>
+                </tr>
+                <tr>
+                    <td>Google</td>
+                    <td>USA</td>
+                    <td>12.4</td>
+                </tr>
+                <tr>
+                    <td>Amazon</td>
+                    <td>USA</td>
+                    <td>44.2</td>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td>USA</td>
+                    <td>10.2</td>
+                </tr>
+                <tr>
+                    <td>Alibaba</td>
+                    <td>China</td>
+                    <td>12.3</td>
+                </tr>
+                <tr>
+                    <td>Tencent</td>
+                    <td>China</td>
+                    <td>11.2</td>
+                </tr>
+                <tr>
+                    <td>Softbank</td>
+                    <td>Japan</td>
+                    <td>9.2</td>
+                </tr>
+                <tr>
+                    <td>Samsung</td>
+                    <td>South Korea</td>
+                    <td>8.2</td>
+                </tr>
+                <tr>
+                    <td>LG</td>
+                    <td>South Korea</td>
+                    <td>7.2</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="myscripts.js"></script>
+    </div>
+</body>
+<!-------------------------------------------------FOOTER----------------------------------------------------------------->
+<!--Create a footer with impressum, AGB, Datenschutzerklärung, Wiederrufsbelehrung und Zahlungs- & Versandbedingungen-->
+<footer>
+    <div class="footer">
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="agb.html">AGB</a>
+        <li><a href="datenschutzerklaerung.html">Datenschutzerklärung</a></li>
+        <li><a href="wiederrufsbelehrung.html">Wiederrufsbelehrung</a></li>
+        <li><a href="zahlungsundversandbedingungen.html">Zahlungs- & Versandbedingungen</a></li>
+    </div>
+</footer>
+
+</html>
