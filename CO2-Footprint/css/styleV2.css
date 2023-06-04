@@ -28,7 +28,7 @@ div.content {
 /*------------------------------------------------------------------------------------------------------------------------------------ */
 /* ---------------------------------------------------------------SIDEBAR------------------------------------------------------------- */
 /* The side navigation menu */
-.sidebar {
+#sidebar {
     cursor: default;
     margin: 0;
     padding: 0;
@@ -36,11 +36,11 @@ div.content {
     background-color: #9ba17b;
     position: fixed;
     height: 100%;
-    text-align: center;
+    text-align: right;
     overflow: auto;
   }
   /* style sidebar links */
-  .sidebar a {
+  #sidebar a {
     display: block;
     color: black;
     padding: 16px;
@@ -48,12 +48,12 @@ div.content {
     text-decoration: none;
   }
   /* style active/current link */
-  .sidebar a.active {
+  #sidebar a.active {
     background-color: #61764b;
     color: white;
   }
   /* style hover effect on sidebar links */
-  .sidebar a:hover:not(.active) {
+  #sidebar a:hover:not(.active) {
     background-color: #cfb997;
     color: white;
   }
