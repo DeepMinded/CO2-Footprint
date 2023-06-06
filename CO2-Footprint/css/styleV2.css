@@ -36,7 +36,7 @@ div.content {
     background-color: #9ba17b;
     position: fixed;
     height: 100%;
-    text-align: right;
+    text-align: center;
     overflow: auto;
   }
   /* style sidebar links */
@@ -129,18 +129,18 @@ li a:hover {
 /* ---------------------------------------------------------------MEDIA QUERIES------------------------------------------------------------- */
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
-    .sidebar {
+    #sidebar {
       width: 100%;
       height: auto;
       position: relative;
     }
-    .sidebar a {float: left;}
+    #sidebar a {float: left;}
     div.content {margin-left: 0;}
     .footer {margin-left: 0;}
   }
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
   @media screen and (max-width: 400px) {
-    .sidebar a {
+    #sidebar a {
       text-align: center;
       float: none;
     }
